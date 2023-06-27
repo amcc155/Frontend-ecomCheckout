@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+
+
+.nav-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    height:85px;
+
+    }
+
+.nav-banner h2{
+    font-size:2rem;
+}
+
+.left-side{
+    display: flex;
+   align-items: center;
+   flex-direction: row;
+   gap:19px;
+   margin-left:25px;
+  
+}
+
+
+.right-side{
+    display: flex;
+    margin-right: 20px;
+    justify-content: flex-end;
+    height:35px;
+    gap:20px;
+    
+  
+}
+
+.dropdown{
+    height:20px;
+}
+
+/* end of header */
+
+/*images for thumbnail */
+
+  .thumbnail {
+    width: 100%;
+    height: 400px;
+  }
+
+  /* arrows */
+
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top:300px;
+    
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+   
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color: white;
+    border-radius: 50%;
+   
+  }
+
+  
+
+  .left-arrow {
+    left: 0;
+    margin-left: 25px;
+  }
+
+  .right-arrow {
+    right: 0;
+    margin-left: 8px;
+    margin-right: 25px;
+  }
+  /* end of picture */
+
+ .about-shoe article{
+    margin-left: 2rem;
+    margin-top:20px;
+  }
+
+  .about-shoe article h4{
+    color:orange;
+  }
+
+  .about-shoe article p{
+    width:80%;
+    font-weight: lighter;
+    line-height: 2rem;
+  }
+
+  .about-shoe article h2{
+    margin-top: 20px;
+    width:45%;
+    margin-bottom:20px;
+    font-weight: bold;
+}
+
+  
+
+  .price-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+  
+  }
+
+  .price-info{
+    display: flex;
+    align-items: center;
+    gap:30px;
+  }
+
+  .discount{
+    display: inline-block;
+    background-color: rgb(255, 198, 92);
+    text-align: center;
+    
+    border-radius: 20px;
+  
+  }
+
+  .old-price{
+    margin-left:10rem;
+  }
+
+
+.add-cart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+    
+}
+.form{
+    width:85%;
+    height:70px;
+    background-color: rgb(212, 208, 208);
+    border-radius: 15px;
+    margin-right:7rem;
+    margin: 0 auto;
+}
+
+.cart-button{
+    height:70px;
+    width:85%;
+    margin-right:7rem;
+    background-color:orange;
+    border-radius: 15px;
+    margin: 0 auto;
+    
+}
+
+/* fix later to center it exactly */
+.form p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+
+.cart-button {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.increments{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.minus{
+    margin-left:20px;
+}
+
+.plus{
+    margin-right:20px;
+}
+
+
+/*basket display */
+#basketDisplay{
+    height:270px;
+    background-color: white;
+    width:200px;
+    display: none;
+    position: fixed;
+    border-radius: 15px;
+    width:80%;
+    margin-left:3rem;
+    
+}
+
+
+
+@media screen and (min-width:1025px){
+    .dropdown{
+        display: none;
+    }
+    .arrows{
+        display: none;
+    }
+
+    .thumbnail{
+        border-radius:15px;
+        width:500px;
+    }
+    .main-wrapper{
+        display: flex;
+        justify-content: center;
+       margin-left:7rem;
+        gap:25px;
+        
+    }
+
+    .add-cart{
+        flex-direction: row;
+       width:50%;
+      margin-left: 35rem;
+    
+       
+    }
+
+    
+}
