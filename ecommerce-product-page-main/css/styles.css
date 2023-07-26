@@ -18,6 +18,9 @@ body{
     align-items: center;
 
     height:85px;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
 
     }
 
@@ -56,6 +59,15 @@ body{
   .thumbnail {
     width: 100%;
     height: 400px;
+  }
+
+  .image-row img{
+    height: 100px;
+    width: 20%;
+  }
+
+  .image-row{
+    display: none;
   }
 
   /* arrows */
@@ -213,9 +225,62 @@ body{
     
 }
 
+.basket-items{
+    color:#fff;
+  font-size:80%;
+  background-color:#e74c3c;
+  position:absolute;
+  width:3%;
+  text-align: center;
+margin-right:2.9rem;
+ display: none;
+  border-radius:1000px;
+  
+}
 
+.form-text{
+    margin-left:4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    color:blue;
+}
+
+.total-row{
+  display: inline-block;
+  
+}
+
+.cart-total{
+    margin-left:0.4rem;
+    font-weight: bolder;
+}
+
+.carousel-inner{
+    display: flex;
+}
+
+.carousel-item{
+    display: none;
+}
+
+.active{
+    display: block;
+    width:100%;
+}
+
+.arrows, .basketDisplayBtn, .plus, .minus, .cart-button{
+    cursor: pointer;
+}
 
 @media screen and (min-width:1025px){
+
+    .about-shoe h2{
+        font-size: 1.5rem;
+    }
     .dropdown{
         display: none;
     }
@@ -228,7 +293,7 @@ body{
         width:500px;
     }
     .main-wrapper{
-        display: flex;
+       display: flex;
         justify-content: center;
        margin-left:7rem;
         gap:25px;
@@ -238,10 +303,31 @@ body{
     .add-cart{
         flex-direction: row;
        width:50%;
-      margin-left: 35rem;
+      margin-left: 40rem;
+      margin-top: -10rem;
     
        
     }
+
+    .image-row{
+        display:flex;
+        width:100%;
+        gap:20px;
+     
+    }
+
+    .image-row img{
+        cursor: pointer;
+       filter: none;
+    }
+
+    .image-selector{
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    
 
     
 }
