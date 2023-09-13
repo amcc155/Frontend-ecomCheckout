@@ -10,14 +10,13 @@ body{
 }
 
 
-
+/* nav */
 .nav-banner{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-
-    height:85px;
+     height:60px;
     width: 100%;
     z-index: 1;
     background-color: white;
@@ -27,7 +26,9 @@ body{
 .nav-banner h2{
     font-size:2rem;
 }
+/* end of nav */
 
+/* header */
 .left-side{
     display: flex;
    align-items: center;
@@ -104,7 +105,8 @@ body{
 
  .about-shoe article{
     margin-left: 2rem;
-    margin-top:20px;
+    margin-top:2rem;
+   
   }
 
   .about-shoe article h4{
@@ -112,28 +114,33 @@ body{
   }
 
   .about-shoe article p{
-    width:80%;
+    width:90%;
+  
     font-weight: lighter;
     line-height: 2rem;
   }
 
   .about-shoe article h2{
     margin-top: 20px;
-    width:45%;
+    min-width:64%;
+    /* max-width:70%; */
     margin-bottom:20px;
     font-weight: bold;
+    font-size:2rem;
+   
 }
-
-  
 
   .price-container{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-   
-  
-  }
+    margin-top:1.5rem;
+   }
+
+   .price-container span{
+    font-weight: bold;
+   }
 
   .price-info{
     display: flex;
@@ -143,8 +150,10 @@ body{
 
   .discount{
     display: inline-block;
-    background-color: rgb(255, 198, 92);
+    background-color: hsl(25, 100%, 94%);
     text-align: center;
+    color:hsl(26, 100%, 55%);
+    font-weight:bolder;
     
     border-radius: 20px;
   
@@ -156,30 +165,42 @@ body{
 
 
 .add-cart{
-    display: flex;
+    display:flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap:10px;
+    margin-top:2rem; 
+    
     
 }
+
 .form{
     width:85%;
     height:70px;
-    background-color: rgb(212, 208, 208);
+    background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
-    margin-right:7rem;
-    margin: 0 auto;
+  
 }
 
 .cart-button{
     height:70px;
     width:85%;
-    margin-right:7rem;
-    background-color:orange;
+    /* margin-right:7rem; */
+    background-color:hsl(26, 100%, 55%);
     border-radius: 15px;
-    margin: 0 auto;
+   
+    color:white;
     
 }
+.cart-button {
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
 
 /* fix later to center it exactly */
 .form p{
@@ -187,14 +208,6 @@ body{
     justify-content: center;
     align-items: center;
     margin-top:20px;
-}
-
-
-.cart-button {
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-   align-items: center;
 }
 
 .increments{
@@ -238,13 +251,6 @@ margin-right:2.9rem;
   
 }
 
-.form-text{
-    margin-left:4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .cart{
     color:blue;
 }
@@ -278,8 +284,12 @@ margin-right:2.9rem;
 
 @media screen and (min-width:1025px){
 
+  main{
+    margin-top:5rem;
+  }
+ 
     .about-shoe h2{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .dropdown{
         display: none;
@@ -299,20 +309,24 @@ margin-right:2.9rem;
         gap:25px;
         
     }
+   .form{
+      width:20%;
+    }
 
+    .cart-button{
+      width:40%;
+    }
     .add-cart{
-        flex-direction: row;
-       width:50%;
-      margin-left: 40rem;
-      margin-top: -10rem;
-    
-       
+      flex-direction: row;
+       margin-left: 32rem;
+        margin-top: -7rem;
+      
     }
 
     .image-row{
         display:flex;
         width:100%;
-        gap:20px;
+        gap:2rem;
      
     }
 
@@ -326,6 +340,8 @@ margin-right:2.9rem;
         flex-direction: column;
      
     }
+
+  
 
     
 
