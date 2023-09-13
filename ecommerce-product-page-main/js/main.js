@@ -25,7 +25,6 @@
 
     /* give function to add button */
     addBtn.addEventListener('click', () => {
-     
       countDisplayNum += 1;
       countDisplay.innerText = countDisplayNum;
 
@@ -48,11 +47,9 @@ total.textContent = totalCalc
 const basketItems = document.querySelector('.basket-items')
 
 addToCart.addEventListener('click',()=>{
-    
     basket.push(product)
   
-    
-    updatePrice()
+updatePrice()
     priceTotal()
    
     

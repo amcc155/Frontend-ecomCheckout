@@ -1,349 +1,365 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Bai Jamjuree', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Bai Jamjuree', sans-serif;
 }
 
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
 
 
 /* nav */
-.nav-banner{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-     height:60px;
-    width: 100%;
-    z-index: 1;
-    background-color: white;
+.nav-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
 
-    }
-
-.nav-banner h2{
-    font-size:2rem;
 }
+
+.nav-banner h2 {
+  font-size: 2rem;
+}
+
 /* end of nav */
 
 /* header */
-.left-side{
-    display: flex;
-   align-items: center;
-   flex-direction: row;
-   gap:19px;
-   margin-left:25px;
-  
+.left-side {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 19px;
+  margin-left: 25px;
+
 }
 
 
-.right-side{
-    display: flex;
-    margin-right: 20px;
-    justify-content: flex-end;
-    height:35px;
-    gap:20px;
-    
-  
+.right-side {
+  display: flex;
+  margin-right: 20px;
+  justify-content: flex-end;
+  height: 35px;
+  gap: 20px;
+
+
 }
 
-.dropdown{
-    height:20px;
+.dropdown {
+  height: 20px;
 }
 
 /* end of header */
 
 /*images for thumbnail */
 
-  .thumbnail {
-    width: 100%;
-    height: 400px;
-  }
-
-  .image-row img{
-    height: 100px;
-    width: 20%;
-  }
-
-  .image-row{
-    display: none;
-  }
-
-  /* arrows */
-
-  .left-arrow,
-  .right-arrow {
-    position: absolute;
-    top:300px;
-    
-    transform: translateY(-50%);
-    width: 34px;
-    height: 34px;
-   
-    padding-top:5px;
-    padding-bottom:5px;
-    background-color: white;
-    border-radius: 50%;
-   
-  }
-
-  
-
-  .left-arrow {
-    left: 0;
-    margin-left: 25px;
-  }
-
-  .right-arrow {
-    right: 0;
-    margin-left: 8px;
-    margin-right: 25px;
-  }
-  /* end of picture */
-
- .about-shoe article{
-    margin-left: 2rem;
-    margin-top:2rem;
-   
-  }
-
-  .about-shoe article h4{
-    color:orange;
-  }
-
-  .about-shoe article p{
-    width:90%;
-  
-    font-weight: lighter;
-    line-height: 2rem;
-  }
-
-  .about-shoe article h2{
-    margin-top: 20px;
-    min-width:64%;
-    /* max-width:70%; */
-    margin-bottom:20px;
-    font-weight: bold;
-    font-size:2rem;
-   
+.thumbnail {
+  width: 100%;
+  height: 400px;
 }
 
-  .price-container{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top:1.5rem;
-   }
-
-   .price-container span{
-    font-weight: bold;
-   }
-
-  .price-info{
-    display: flex;
-    align-items: center;
-    gap:30px;
-  }
-
-  .discount{
-    display: inline-block;
-    background-color: hsl(25, 100%, 94%);
-    text-align: center;
-    color:hsl(26, 100%, 55%);
-    font-weight:bolder;
-    
-    border-radius: 20px;
-  
-  }
-
-  .old-price{
-    margin-left:10rem;
-  }
-
-
-.add-cart{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:10px;
-    margin-top:2rem; 
-    
-    
+.image-row img {
+  height: 100px;
+  width: 20%;
 }
 
-.form{
-    width:85%;
-    height:70px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
-  
+.image-row {
+  display: none;
 }
 
-.cart-button{
-    height:70px;
-    width:85%;
-    /* margin-right:7rem; */
-    background-color:hsl(26, 100%, 55%);
-    border-radius: 15px;
-   
-    color:white;
-    
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
+
+/* arrows */
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 300px;
+
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  border-radius: 50%;
+
+}
+
+
+
+.left-arrow {
+  left: 0;
+  margin-left: 25px;
+}
+
+.right-arrow {
+  right: 0;
+  margin-left: 8px;
+  margin-right: 25px;
+}
+
+/* end of picture */
+
+.about-shoe article {
+  margin-left: 2rem;
+  margin-top: 2rem;
+
+}
+
+.about-shoe article h4 {
+  color: orange;
+}
+
+.about-shoe article p {
+  width: 90%;
+  max-width:700px;
+  font-weight: lighter;
+  line-height: 2rem;
+}
+
+.about-shoe article h2 {
+  margin-top: 20px;
+  min-width: 64%;
+  /* max-width:70%; */
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.price-container span {
+  font-weight: bold;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.discount {
+  display: inline-block;
+  background-color: hsl(25, 100%, 94%);
+  text-align: center;
+  color: hsl(26, 100%, 55%);
+  font-weight: bolder;
+
+  border-radius: 20px;
+
+}
+
+.old-price {
+  margin-left: 10rem;
+}
+
+
+.add-cart {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2rem;
+
+
+}
+
+.form {
+  width: 85%;
+  height: 70px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+
+}
+
+.cart-button {
+  height: 70px;
+  width: 85%;
+  /* margin-right:7rem; */
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 15px;
+
+  color: white;
+
+}
+
 .cart-button {
   display: flex;
   flex-direction: column;
- justify-content: center;
- align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 
 /* fix later to center it exactly */
-.form p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:20px;
+.form p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.increments{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.increments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.minus{
-    margin-left:20px;
+.minus {
+  margin-left: 20px;
 }
 
-.plus{
-    margin-right:20px;
+.plus {
+  margin-right: 20px;
 }
 
 
 /*basket display */
-#basketDisplay{
-    height:270px;
-    background-color: white;
-    width:200px;
-    display: none;
-    position: fixed;
-    border-radius: 15px;
-    width:80%;
-    margin-left:3rem;
-    
+#basketDisplay {
+  height: 270px;
+  background-color: white;
+  width: 200px;
+  display: none;
+  position: fixed;
+  border-radius: 15px;
+  width: 80%;
+  margin-left: 3rem;
+
 }
 
-.basket-items{
-    color:#fff;
-  font-size:80%;
-  background-color:#e74c3c;
-  position:absolute;
-  width:3%;
+.basket-items {
+  color: #fff;
+  font-size: 80%;
+  background-color: #e74c3c;
+  position: absolute;
+  width: 3%;
   text-align: center;
-margin-right:2.9rem;
- display: none;
-  border-radius:1000px;
-  
+  margin-right: 2.9rem;
+  display: none;
+  border-radius: 1000px;
+
 }
 
-.cart{
-    color:blue;
+.cart {
+  color: blue;
 }
 
-.total-row{
+.total-row {
   display: inline-block;
-  
+
 }
 
-.cart-total{
-    margin-left:0.4rem;
-    font-weight: bolder;
+.cart-total {
+  margin-left: 0.4rem;
+  font-weight: bolder;
 }
 
-.carousel-inner{
-    display: flex;
+.carousel-inner {
+  display: flex;
 }
 
-.carousel-item{
-    display: none;
+.carousel-item {
+  display: none;
 }
 
-.active{
-    display: block;
-    width:100%;
+.active {
+  display: block;
+  width: 100%;
 }
 
-.arrows, .basketDisplayBtn, .plus, .minus, .cart-button{
-    cursor: pointer;
+.arrows,
+.basketDisplayBtn,
+.plus,
+.minus,
+.cart-button {
+  cursor: pointer;
 }
 
-@media screen and (min-width:1025px){
+@media screen and (min-width:1025px) {
 
-  main{
-    margin-top:5rem;
+  main {
+    margin-top: 5rem;
   }
- 
-    .about-shoe h2{
-        font-size: 1.8rem;
-    }
-    .dropdown{
-        display: none;
-    }
-    .arrows{
-        display: none;
-    }
 
-    .thumbnail{
-        border-radius:15px;
-        width:500px;
-    }
-    .main-wrapper{
-       display: flex;
-        justify-content: center;
-       margin-left:7rem;
-        gap:25px;
-        
-    }
-   .form{
-      width:20%;
-    }
+  .about-shoe h2 {
+    font-size: 1.8rem;
+  }
 
-    .cart-button{
-      width:40%;
-    }
-    .add-cart{
-      flex-direction: row;
-       margin-left: 32rem;
-        margin-top: -7rem;
-      
-    }
+  .dropdown {
+    display: none;
+  }
 
-    .image-row{
-        display:flex;
-        width:100%;
-        gap:2rem;
-     
-    }
+  .arrows {
+    display: none;
+  }
 
-    .image-row img{
-        cursor: pointer;
-       filter: none;
-    }
+  .thumbnail {
+    border-radius: 15px;
+    width: 500px;
+  }
 
-    .image-selector{
-        display: flex;
-        flex-direction: column;
-     
-    }
+  .main-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 7rem;
+    gap: 25px;
 
-  
+  }
 
-    
+  .form {
+    width: 20%;
+  }
 
-    
+  .cart-button {
+    width: 40%;
+  }
+
+  .add-cart {
+    flex-direction: row;
+
+
+  }
+
+  .image-row {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+
+  }
+
+  .image-row img {
+    cursor: pointer;
+    filter: none;
+  }
+
+  .image-selector {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+
+
+
+
 }
