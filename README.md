@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./checkout_preview.jpg)
+![](./checkout_preview.png)
 
 
 ### Links
