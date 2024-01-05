@@ -2,13 +2,15 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
+.attribution{
+  margin-top:2rem;
+}
 body {
   background-color: white;
 }
-
 
 /* nav */
 .nav-banner {
@@ -20,13 +22,27 @@ body {
   width: 100%;
   z-index: 1;
   background-color: white;
-
-}
+ }
 
 .nav-banner h2 {
   font-size: 2rem;
 }
 
+nav{
+  display: none;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  list-style-type: none;
+  margin-left:2.5rem;
+  cursor: pointer;
+}
+
+nav li:hover{
+  border-bottom:2px solid orange;
+}
 /* end of nav */
 
 /* header */
@@ -113,6 +129,7 @@ body {
 .about-shoe article {
   margin-left: 2rem;
   margin-top: 2rem;
+  
 
 }
 
@@ -125,6 +142,9 @@ body {
   max-width:700px;
   font-weight: lighter;
   line-height: 2rem;
+  font-weight: 400;
+  color:gray;
+  color: hsl(219, 9%, 45%)
 }
 
 .about-shoe article h2 {
@@ -192,21 +212,23 @@ body {
 }
 
 .cart-button {
-  height: 70px;
+  height: 60px;
   width: 85%;
-  /* margin-right:7rem; */
+  display: flex;
   background-color: hsl(26, 100%, 55%);
-  border-radius: 15px;
-
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px 6px hsl(26, 100%, 55%);
   color: white;
-
 }
+
+
 
 .cart-button {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap:0.5rem;
 }
 
 
@@ -300,10 +322,25 @@ body {
     margin-top: 5rem;
   }
 
-  .about-shoe h2 {
-    font-size: 1.8rem;
+  nav{
+    display: block;
   }
 
+  .nav-banner{
+    padding-left:3rem;
+    padding-right:3rem;
+    margin-top:1rem;
+  
+  }
+
+.about-shoe h2 {
+    font-size: 2rem;
+  }
+
+  .about-shoe article p{
+   
+    
+  }
   .dropdown {
     display: none;
   }
@@ -321,9 +358,12 @@ body {
     display: flex;
     justify-content: center;
     margin-left: 7rem;
-    gap: 25px;
+    gap: 50px;
+}
 
-  }
+.wrapper{
+  margin-top:2rem;
+}
 
   .form {
     width: 20%;
@@ -343,8 +383,8 @@ body {
     display: flex;
     width: 100%;
     gap: 2rem;
-
-  }
+    margin-top:1.5rem;
+}
 
   .image-row img {
     cursor: pointer;
@@ -354,12 +394,44 @@ body {
   .image-selector {
     display: flex;
     flex-direction: column;
+}
 
+.cart-button{
+  flex-direction: row;
+  gap:0.5rem;
+}
+
+.form{
+  width:30%;
+}
+}
+
+@media screen and (min-width:1220px){
+  .about-shoe article p{
+    width:70%;
+  }
+}
+
+@media screen and (min-width:1440px){
+  .about-shoe article p{
+    width:65%;
+    
   }
 
+  .nav-banner{
+    padding-left:5rem;
+    padding-right:5rem;
+  }
 
+  .main-wrapper{
+    gap:100px;
+  }
 
+  .add-cart{
+    margin-top:5rem;
+  }
 
-
-
+  .cart-button{
+    width:48%;
+  }
 }
