@@ -20,20 +20,20 @@ const product = {
     price: 125.00
 }
 
-let countDisplayNum = 0;
+
 
 
 /* give function to add button */
 addBtn.addEventListener('click', () => {
-    countDisplayNum += 1;
-    countDisplay.innerText = countDisplayNum;
     product.quantity += 1
+    countDisplay.innerText = product.quantity
+
 });
 
 minusBtn.addEventListener('click', () => {
-    countDisplayNum -= 1
-    countDisplay.innerText = countDisplayNum
     product.quantity -= 1
+    countDisplay.innerText = product.quantity
+
     notZero()
 
 });
@@ -135,7 +135,7 @@ const notZero = () => {
 const removeProduct = () => {
     product.quantity = 0
     countDisplay.innerText = product.quantity
-    basketItems.innerText = product.quantity
+    basketItems.textContent = product.quantity
 }
 
 
