@@ -35,6 +35,11 @@ Users should be able to:
 - Improved my skills on making repsonsive deigns.
 - Taking a design someone else made, and coding it to replicate it the best I can
 
+## To Do
+-Clean up Code
+-Mobile NavBar
+-Style Basket Display
+
 ## Author
 
 - Website - [Aidan McCormick](https://amcc155.github.io/portfolio1/)
