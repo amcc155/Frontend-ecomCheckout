@@ -150,10 +150,10 @@ nav li:hover{
 .about-shoe article h2 {
   margin-top: 20px;
   min-width: 64%;
-  /* max-width:70%; */
+ 
   margin-bottom: 20px;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
 
 }
 
@@ -337,10 +337,7 @@ nav li:hover{
     font-size: 2rem;
   }
 
-  .about-shoe article p{
-   
-    
-  }
+
   .dropdown {
     display: none;
   }
@@ -416,6 +413,10 @@ nav li:hover{
   .about-shoe article p{
     width:65%;
     
+  }
+
+  .about-shoe article h2{
+    max-width:70%;
   }
 
   .nav-banner{
